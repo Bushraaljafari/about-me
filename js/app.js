@@ -56,23 +56,28 @@ function question2(){
 question2();
 
 
-let favouritColor = prompt('my favourite color is blue!');
-//console.log(favouritColor);
-switch (favouritColor.toLowerCase()) {
-case 'yes':
-case 'y':
-  alert('no,it is red');
+function question3(){
+  let favouritColor = prompt('my favourite color is blue!');
+  //console.log(favouritColor);
+  switch (favouritColor.toLowerCase()) {
+  case 'yes':
+  case 'y':
+    alert('no,it is red');
+  
+    break;
+  case 'no':
+  case 'n':
+    alert('you right ,it is red');
+    score++;
+    break;
+  default:
+    alert('please answer with yes or no to qustions');
+    break;
+  }
 
-  break;
-case 'no':
-case 'n':
-  alert('you right ,it is red');
-  score++;
-  break;
-default:
-  alert('please answer with yes or no to qustions');
-  break;
 }
+question3();
+
 
 
 let study = prompt('i have an abachoular degree in civil engineer');
