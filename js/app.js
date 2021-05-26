@@ -63,7 +63,7 @@ function question3(){
   case 'yes':
   case 'y':
     alert('no,it is red');
-  
+
     break;
   case 'no':
   case 'n':
@@ -86,7 +86,7 @@ function question4(){
   case 'y':
     alert('yes i have it ');
     score++;
-  
+
     break;
   case 'no':
   case 'n':
@@ -119,7 +119,7 @@ function question5(){
     alert('please answer with yes or no to qustions');
     break;
   }
-  
+
 }
 question5();
 
@@ -131,7 +131,7 @@ function question6(){
   case 'yes':
   case 'y':
     alert('no i am not agamer ');
-  
+
     break;
   case 'no':
   case 'n':
@@ -183,40 +183,40 @@ alert ('the correct answer is 5');*/
 
 
 
+function question7(){
+  for (let i = 0; i < 4; i++) {
+    let questionSixes = Number(prompt('know, try to guess number that i had in my mind , to make it easire on you choose number from 0 to 6'));
+    if (questionSixes === 5) {
+      alert('you are correct');
+      score++;
+      break;
+    }
+    else if (questionSixes > 5) {
+      alert('your answer is higher than main');
 
-for (let i = 0; i < 4; i++) {
-  let questionSixes = Number(prompt('know, try to guess number that i had in my mind , to make it easire on you choose number from 0 to 6'));
-  if (questionSixes === 5) {
-    alert('you are correct');
-    score++;
-    break;
+
+    }
+    else if (questionSixes < 5) {
+      alert('your answer is lower than main');
+
+
+
+    }
+    else {
+      alert(' try again');
+
+    }
+
+
+    if (i === 3) {
+      alert('the correct answer is 5');
+    }
+
   }
-  else if (questionSixes > 5) {
-    alert('your answer is higher than main');
-
-
-  }
-  else if (questionSixes < 5) {
-    alert('your answer is lower than main');
-
-
-
-  }
-  else {
-    alert(' try again');
-
-  }
-
-
-  if (i === 3) {
-    alert('the correct answer is 5');
-  }
-
-
 
 }
 
-
+question7();
 
 
 
