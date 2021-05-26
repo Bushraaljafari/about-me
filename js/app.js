@@ -10,23 +10,28 @@ console.log(namea);
 alert('hi,' + namea);
 
 alert('we will play aguessing game about me lets go');
-let score=0;
-let go = prompt('my name is bushra!');
-//console.log(go);
-switch (go.toLowerCase()) {
-case 'yes':
-case 'y':
-  alert('corect bushra is my name');
-  score++;
-  break;
-case 'no':
-case 'n':
-  alert('wrong my name is bushra');
-  break;
-default:
-  alert('please answer with yes or no to qustions');
-  break;
+let score = 0;
+
+function question1() {
+  let go = prompt('my name is bushra!');
+  //console.log(go);
+  switch (go.toLowerCase()) {
+  case 'yes':
+  case 'y':
+    alert('corect bushra is my name');
+    score++;
+    break;
+  case 'no':
+  case 'n':
+    alert('wrong my name is bushra');
+    break;
+  default:
+    alert('please answer with yes or no to qustions');
+    break;
+  }
+
 }
+question1();
 
 
 
@@ -102,7 +107,7 @@ default:
   break;
 }
 
-let game=prompt('i am agamer ');
+let game = prompt('i am agamer ');
 //console.log(game);
 switch (game.toLowerCase()) {
 case 'yes':
@@ -158,32 +163,31 @@ alert ('the correct answer is 5');*/
 
 
 for (let i = 0; i < 4; i++) {
-  let questionSixes=Number(prompt('know, try to guess number that i had in my mind , to make it easire on you choose number from 0 to 6'));
-  if (questionSixes===5) {
+  let questionSixes = Number(prompt('know, try to guess number that i had in my mind , to make it easire on you choose number from 0 to 6'));
+  if (questionSixes === 5) {
     alert('you are correct');
     score++;
-    break ;
+    break;
   }
-  else if (questionSixes>5){
-    alert ('your answer is higher than main');
+  else if (questionSixes > 5) {
+    alert('your answer is higher than main');
 
 
   }
-  else if (questionSixes<5)
-  {
-    alert ('your answer is lower than main');
+  else if (questionSixes < 5) {
+    alert('your answer is lower than main');
 
 
 
   }
   else {
-    alert (' try again');
+    alert(' try again');
 
   }
 
 
-  if ( i===3){
-    alert ('the correct answer is 5');
+  if (i === 3) {
+    alert('the correct answer is 5');
   }
 
 
@@ -203,24 +207,26 @@ Consider using a loop of some sort for this question.*/
 
 
 
-let fruit =['banana','apple','mango'];
+let fruit = ['banana', 'apple', 'mango'];
 for (let i = 0; i < 6; i++) {
-  let guessFruit=prompt('guess my favorite fruit');
-  let guessFruits=guessFruit.toLowerCase();
+  let guessFruit = prompt('guess my favorite fruit');
+  let guessFruits = guessFruit.toLowerCase();
   const element1 = fruit[0];
   const element2 = fruit[0];
   const element3 = fruit[0];
-  if (guessFruits=== element1||guessFruits=== element2){
-    alert ('you are alright');
+  if (guessFruits === element1 || guessFruits === element2) {
+    alert('you are alright');
     score++;
-    break;}
-  else if(guessFruits=== element2||guessFruits=== element3)
-  { alert ('you are alright');
+    break;
+  }
+  else if (guessFruits === element2 || guessFruits === element3) {
+    alert('you are alright');
     score++;
-    break;}
+    break;
+  }
 
 }
-alert ('my favorite fruit is banana,apple,mango');
+alert('my favorite fruit is banana,apple,mango');
 
 
 
