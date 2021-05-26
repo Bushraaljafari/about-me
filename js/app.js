@@ -123,23 +123,29 @@ function question5(){
 }
 question5();
 
-let game = prompt('i am agamer ');
-//console.log(game);
-switch (game.toLowerCase()) {
-case 'yes':
-case 'y':
-  alert('no i am not agamer ');
+function question6(){
 
-  break;
-case 'no':
-case 'n':
-  alert('you are right');
-  score++;
-  break;
-default:
-  alert('please answer with yes or no to qustions');
-  break;
+  let game = prompt('i am agamer ');
+  //console.log(game);
+  switch (game.toLowerCase()) {
+  case 'yes':
+  case 'y':
+    alert('no i am not agamer ');
+  
+    break;
+  case 'no':
+  case 'n':
+    alert('you are right');
+    score++;
+    break;
+  default:
+    alert('please answer with yes or no to qustions');
+    break;
+  }
 }
+
+question6();
+
 /*let game = prompt('i am agamer ');
 //console.log(game);
 if (game.toLowerCase === 'yes' || game.toLowerCase === 'y') {
