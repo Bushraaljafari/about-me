@@ -154,8 +154,6 @@ else if (game.toLowerCase === 'no' || game.toLowerCase === 'n') { alert('you are
 
 
 
-
-
 /*for (let i = 0; i < 4; i++) {
   let questionSixes=Number(prompt('know, try to guess number that i had in my mind , to make it easire on you choose number from 0 to 6'));
   if (questionSixes===5) {
@@ -170,7 +168,6 @@ else if (game.toLowerCase === 'no' || game.toLowerCase === 'n') { alert('you are
   }
   else {
     alert ('your answer is lower than main');
-
 
 
   }
@@ -216,7 +213,6 @@ function question7(){
 }
 
 question7();
-
 
 /*Add a 7th question that has multiple possible correct answers that are stored in an array.
 Give the user 6 attempts to guess the correct answer.
