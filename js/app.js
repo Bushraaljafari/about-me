@@ -78,25 +78,29 @@ function question3(){
 }
 question3();
 
+function question4(){
+  let study = prompt('i have an abachoular degree in civil engineer');
+  //console.log(study);
+  switch (study.toLowerCase()) {
+  case 'yes':
+  case 'y':
+    alert('yes i have it ');
+    score++;
+  
+    break;
+  case 'no':
+  case 'n':
+    alert('i am actually have it');
+    break;
+  default:
+    alert('please answer with yes or no to qustions');
+    break;
+  }
 
 
-let study = prompt('i have an abachoular degree in civil engineer');
-//console.log(study);
-switch (study.toLowerCase()) {
-case 'yes':
-case 'y':
-  alert('yes i have it ');
-  score++;
-
-  break;
-case 'no':
-case 'n':
-  alert('i am actually have it');
-  break;
-default:
-  alert('please answer with yes or no to qustions');
-  break;
 }
+
+question4();
 
 
 let travel = prompt('i like to travel ');
