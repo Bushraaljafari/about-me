@@ -97,7 +97,6 @@ function question4(){
     break;
   }
 
-
 }
 
 question4();
@@ -219,43 +218,40 @@ function question7(){
 question7();
 
 
-
-
 /*Add a 7th question that has multiple possible correct answers that are stored in an array.
 Give the user 6 attempts to guess the correct answer.
 The guesses will end once the user guesses a correct answer or they run out of attempts.
 Display all the possible correct answers to the user.
 Consider using a loop of some sort for this question.*/
 
+function question8(){
 
+  let fruit = ['banana', 'apple', 'mango'];
+  for (let i = 0; i < 6; i++) {
+    let guessFruit = prompt('guess my favorite fruit');
+    let guessFruits = guessFruit.toLowerCase();
+    const element1 = fruit[0];
+    const element2 = fruit[0];
+    const element3 = fruit[0];
+    if (guessFruits === element1 || guessFruits === element2) {
+      alert('you are alright');
+      score++;
+      break;
+    }
+    else if (guessFruits === element2 || guessFruits === element3) {
+      alert('you are alright');
+      score++;
+      break;
+    }
 
-let fruit = ['banana', 'apple', 'mango'];
-for (let i = 0; i < 6; i++) {
-  let guessFruit = prompt('guess my favorite fruit');
-  let guessFruits = guessFruit.toLowerCase();
-  const element1 = fruit[0];
-  const element2 = fruit[0];
-  const element3 = fruit[0];
-  if (guessFruits === element1 || guessFruits === element2) {
-    alert('you are alright');
-    score++;
-    break;
   }
-  else if (guessFruits === element2 || guessFruits === element3) {
-    alert('you are alright');
-    score++;
-    break;
-  }
+  alert('my favorite fruit is banana,apple,mango');
 
 }
-alert('my favorite fruit is banana,apple,mango');
 
-
-
+question8();
 
 alert(`thanks for playing ${namea} your score is ${score}`);
-
-
 
 
 
