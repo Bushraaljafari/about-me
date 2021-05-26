@@ -102,23 +102,26 @@ function question4(){
 
 question4();
 
-
-let travel = prompt('i like to travel ');
-//console.log(travel);
-switch (travel.toLowerCase()) {
-case 'yes':
-case 'y':
-  alert('of course yes ');
-  score++;
-  break;
-case 'no':
-case 'n':
-  alert('what who doesnt like travel!');
-  break;
-default:
-  alert('please answer with yes or no to qustions');
-  break;
+function question5(){
+  let travel = prompt('i like to travel ');
+  //console.log(travel);
+  switch (travel.toLowerCase()) {
+  case 'yes':
+  case 'y':
+    alert('of course yes ');
+    score++;
+    break;
+  case 'no':
+  case 'n':
+    alert('what who doesnt like travel!');
+    break;
+  default:
+    alert('please answer with yes or no to qustions');
+    break;
+  }
+  
 }
+question5();
 
 let game = prompt('i am agamer ');
 //console.log(game);
