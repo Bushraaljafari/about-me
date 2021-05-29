@@ -1,0 +1,55 @@
+
+*{
+    font-family: 'Odibee Sans', cursive;
+    font-family: 'Pattaya', sans-serif;
+    
+
+}
+header{color: white;
+background-color:#FD7272;
+height: 30%;
+
+
+
+}
+
+main{
+background-color:#F8EFBA;
+color:#FD7272;
+height:50%;
+padding-left: 10%;
+
+}
+
+
+
+
+
+footer{
+    background-color: #FEA47F;
+    height: 20%;
+}
+#title{
+    font-size:400% ;
+    text-align: center;
+  
+
+}
+.info{
+    text-decoration: none;
+    color: white;
+    float : left;
+    position :relative;
+    border: white solid 3px;
+    padding: 5px;
+    bottom: 80px;
+    width: 150px;
+    left: 50px;
+
+
+
+}
+#welcome{
+    text-align: center;
+    font-size: 200%;
+}
